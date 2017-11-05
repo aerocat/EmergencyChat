@@ -3,23 +3,30 @@
   <div id="container">
     <div class="header">
       <div id="icon_cell">
-        <img class="text-center" src="/img/barista-lego.jpg" style="width:40%; margin:10px;">
+        <img class="text-center" src="/img/hurricane.jpg" style="width:40%; margin:10px;">
       </div>
     </div>
 
     <div id="continue">
-      <h1>IoL Cafe</h1>
-      <p>Please enjoy our complimentary WiFi and a cup of joe.</p>
-      <p>
-        Brought to you by <a href="http://www.internetoflego.com" target="blank">InternetOfLego.com</a>
-      </p>
+      <h1>EmergencyChat</h1>
+      <p> Built by Marco Ferri at WildHacks 2017 </p>
+      
+      <h5> Emergency chat is a service to help you stay in touch with your local community during natural disasters
+      </h5>
+      <h4> Instructions for Civilians </h4>
+      <p> Click on "GO TO CHAT" below to access the chat </p>
+      <h2> <a href='/chat'> GO TO CHAT </a> </h2>
+
+      <h4> Instructions for Emergency Personnel </h4>
+      <p> Please go ahead and login below with your credentials </p>
+
       <form action={{login_url}} method="post" class="form col-md-12 center-block">
         <input type="hidden" name="success_url" value={{success_url}} />
         <div class="form-group">
           <div class="error">
             {{recent_error}}
           </div>
-            
+
           <input class="form-control input-lg" type="text" name="username" placeholder="Username or email">
           <i class="icon-user icon-large"></i>
         </div>

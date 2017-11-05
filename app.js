@@ -122,6 +122,10 @@ app.use('/excapData', expressMongoRest('mongodb://localhost:27017/test'));
 // Click-through Splash Page
 // ################################################################
 
+// serving chatroom
+app.get('/chat', function(req, res) {
+  res.sendfile('public/index.html');
+});
 
 // serving the static click-through HTML file
 app.get('/click', function (req, res) {
@@ -160,7 +164,7 @@ app.post('/login', function(req, res){
 
   // forward request onto Cisco Meraki to grant access
     // *** Send user directly to intended page : user_continue_url
-  //res.writeHead(302, {'Location': req.session.base_grant_url + "?continue_url="+req.session.user_continue_url});
+//  res.writeHead(302, {'Location': req.session.base_grant_url + "?continue_url="+req.session.user_continue_url});
 
     // *** Send user to success page : success_url
   res.writeHead(302, {'Location': req.session.base_grant_url + "?continue_url="+req.session.success_url});
@@ -190,7 +194,7 @@ app.get('/signon', function (req, res) {
   req.session.success_url = req.protocol + "://" + req.session.host + "/success";
   req.session.signon_time = new Date();
   req.session.recent_error = req.query.error_message;
-  
+
   console.log(req.session.recent_error);
 
   // do something with the session and form data (i.e. console, database, file, etc. )

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Websockets Chatroom </title>
+  </head>
+<body>
+
+    <div id="chatWindow" style="
+        width: 70%;
+        height: 350px;
+        margin: 0 auto;
+        border: 5px solid black;
+        border-radius: 7px;
+        overflow: scroll;
+      ">
+      <div id="pinned" style="display: none;"> pinned here </div>
+      <div id="log"> </div>
+    </div>
+    <br>
+    <center>
+        <input type="text" placeholder="You message here" id="input"/>
+        <!--
+        Pin message?
+        <input type="checkbox" id="pinned" name="pinned" />
+      -->
+        <button> Send </button>
+    </center>
+    <br>
+    <div style="
+        width: 70%;
+        margin: 0 auto;
+      "> Connected Users: </div>
+
+    <div id="users" style="
+          width: 70%;
+          height: 150px;
+          margin: 0 auto;
+          border: 1px solid blue;
+          border-radius: 7px;
+        ">
+    </div>
+    <script>
+      var sock = new WebSocket("ws://192.168.128.9:5000");
+      var logWindow = document.getElementById('log');
+      var profile = document.getElementById('profile');
+      var users = document.getElementById('users');
+      sock.onopen = function (e){
+        //alert('Socket opened successfully');
+          var name = prompt("Please enter a username to chat");
+          sock.send(JSON.stringify({
+            username: name
+          }));
+      };
+
+      sock.onmessage = function (event) {
+        //console.log(event.data);
+        var json = JSON.parse(event.data);
+        console.log(json);
+        logWindow.innerHTML += "<i>" + json.username + "</i>: " + json.message + "<br>";
+        profile.innerHTML += "<h4>" + json.username + "</h4>";
+      };
+
+      document.querySelector('button').onclick = function() {
+        var text = document.getElementById('input').value;
+          //sock.send(text);
+          //log.innerHTML += "<i>You</i>: " + text + "<br>";
+          sock.send(JSON.stringify({
+            content: text
+          }));
+
+    };
+    </script>
+</body>
+
+</html>

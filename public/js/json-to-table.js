@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en" class=" is-copy-enabled emoji-size-boost">
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
@@ -8,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta name="viewport" content="width=1020">
-    
-    
+
+
     <title>Json-to-HTML-Table/json-to-table.js at master · afshinm/Json-to-HTML-Table · GitHub</title>
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
     <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
@@ -24,9 +21,9 @@
       <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
     <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
     <link rel="assets" href="https://assets-cdn.github.com/">
-    
+
     <meta name="pjax-timeout" content="1000">
-    
+
 
     <meta name="msapplication-TileImage" content="/windows-tile.png">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -57,14 +54,14 @@
 
     <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-5e2d1232bc97970f293f259bcb6ab137945cb5635b398c2a81027bf21f0255c8.css" integrity="sha256-Xi0SMryXlw8pPyWby2qxN5RctWNbOYwqgQJ78h8CVcg=" media="all" rel="stylesheet" />
     <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2-c6824f142375ea604f7dca2bd8018e02878485be3b6e9ba5ac55e6fa922887fa.css" integrity="sha256-xoJPFCN16mBPfcor2AGOAoeEhb47bpulrFXm+pIoh/o=" media="all" rel="stylesheet" />
-    
-    
-    
+
+
+
 
 
     <meta http-equiv="x-pjax-version" content="cbb07a6d365895dbe879d43878fb3c63">
 
-      
+
   <meta name="description" content="Json-to-HTML-Table - Simple Json to standard HTML table converter in fastest way">
   <meta name="go-import" content="github.com/afshinm/Json-to-HTML-Table git https://github.com/afshinm/Json-to-HTML-Table.git">
 
@@ -77,13 +74,13 @@
   <body class="logged_out   env-production macintosh vis-public page-blob">
     <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
 
-    
-    
-    
 
 
 
-      
+
+
+
+
       <div class="header header-logged-out" role="banner">
   <div class="container clearfix">
 
@@ -97,7 +94,8 @@
     </div>
 
     <div class="site-search repo-scope js-site-search" role="search">
-      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/afshinm/Json-to-HTML-Table/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/afshinm/Json-to-HTML-Table/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+      <!-- </textarea> --><!--
+      <form accept-charset="UTF-8" action="/afshinm/Json-to-HTML-Table/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/afshinm/Json-to-HTML-Table/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
   <label class="js-chromeless-input-container form-control">
     <div class="scope-badge">This repository</div>
     <input type="text"
@@ -147,7 +145,7 @@
       <div class="container">
 
         <div class="clearfix">
-          
+
 
 <ul class="pagehead-actions">
 
@@ -211,7 +209,7 @@
     <div class="container">
       <div class="repository-with-sidebar repo-container new-discussion-timeline ">
         <div class="repository-sidebar clearfix">
-          
+
 <nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
      role="navigation"
      data-pjax="#js-repo-pjax-container"
@@ -258,7 +256,7 @@
 </nav>
 
             <div class="only-with-full-nav">
-                
+
 <div class="js-clone-url clone-url open"
   data-protocol-type="http">
   <h3 class="text-small text-muted"><span class="text-emphasized">HTTPS</span> clone URL</h3>
@@ -271,7 +269,7 @@
   </div>
 </div>
 
-  
+
 <div class="js-clone-url clone-url "
   data-protocol-type="subversion">
   <h3 class="text-small text-muted"><span class="text-emphasized">Subversion</span> checkout URL</h3>
@@ -309,14 +307,14 @@
         </div>
         <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
 
-          
+
 
 <a href="/afshinm/Json-to-HTML-Table/blob/58f1ef2c533983f5cb409dde37259d64b9702403/json-to-table.js" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
 
 <!-- blob contrib key: blob_contributors:v21:32a928cb3af2e02df9d38d53f25d5f76 -->
 
   <div class="file-navigation js-zeroclipboard-container">
-    
+
 <div class="select-menu js-menu-container js-select-menu left">
   <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
     title="master"
@@ -484,7 +482,7 @@
   </div>
 </div>
 
-  
+
 
   <div class="blob-wrapper data type-javascript">
       <table class="highlight tab-size js-file-line-container" data-tab-size="8">
@@ -1279,7 +1277,7 @@
 
 <a href="#jump-to-line" rel="facebox[.linejump]" data-hotkey="l" style="display:none">Jump to Line</a>
 <div id="jump-to-line" style="display:none">
-  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+  <!-- </textarea> --><!-- --><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
     <input class="linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
     <button type="submit" class="btn">Go</button>
 </form></div>
@@ -1322,9 +1320,9 @@
 
 
 
-    
-    
-    
+
+
+
 
     <div id="ajax-error-message" class="flash flash-error">
       <span class="octicon octicon-alert"></span>
@@ -1337,8 +1335,8 @@
 
       <script crossorigin="anonymous" integrity="sha256-9F9EGfLnZiPgh7EKnr6l8fiIrV/Kl1JKjb+zP+QiGZo=" src="https://assets-cdn.github.com/assets/frameworks-f45f4419f2e76623e087b10a9ebea5f1f888ad5fca97524a8dbfb33fe422199a.js"></script>
       <script async="async" crossorigin="anonymous" integrity="sha256-DFnXfkL6YyFDiDCNe729Xr0u5VeJSNCljoIn6tPMz0E=" src="https://assets-cdn.github.com/assets/github-0c59d77e42fa63214388308d7bbdbd5ebd2ee5578948d0a58e8227ead3cccf41.js"></script>
-      
-      
+
+
     <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
       <span class="octicon octicon-alert"></span>
       <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
@@ -1346,4 +1344,3 @@
     </div>
   </body>
 </html>
-
